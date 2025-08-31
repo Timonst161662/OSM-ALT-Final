@@ -11,7 +11,7 @@ Antwortet auf `GET /route?source=<id>&target=<id>`.
   - [Crow](https://github.com/CrowCpp/Crow) (header-only)
   - [nlohmann/json](https://github.com/nlohmann/json) (header-only)
 Download Graph: https://drive.google.com/file/d/16rm5ReNZ1FQIxD3omjH4qh_nvb653DqY/view?usp=sharing
-Download Landmark Tables: 
+Download Landmark Tables: https://drive.google.com/drive/folders/1ZsEQX4emFX66ZMs1exxaRw1v3P-RPIkc?usp=sharing
 
 ## Projektstruktur
 ```
