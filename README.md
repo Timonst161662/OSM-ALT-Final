@@ -5,6 +5,10 @@ C++17 Routing-Server mit Dijkstra, A*, ALT (uni, bi, OR).
 HTTP-Server via **Crow** auf Port `18080`.  
 Antwortet auf `GET /route?source=<id>&target=<id>`.
 
+##Testdaten
+0831_1kRandomQueries_Log.txt enthält den gesamten Log der 1000 random Queries
+0831_1kRandomQueries_summary.txt enthält die Zusammmenfassung der 1000 random Queries
+
 ## Voraussetzungen
 - Visual Studio 2019/2022 (x64, Release, C++17)
 - Abhängigkeiten (liegen im Projekt):
@@ -12,6 +16,7 @@ Antwortet auf `GET /route?source=<id>&target=<id>`.
   - [nlohmann/json](https://github.com/nlohmann/json) (header-only)
 Download Graph: https://drive.google.com/file/d/16rm5ReNZ1FQIxD3omjH4qh_nvb653DqY/view?usp=sharing
 Download Landmark Tables: https://drive.google.com/drive/folders/1ZsEQX4emFX66ZMs1exxaRw1v3P-RPIkc?usp=sharing
+Wenn die Landmark Tabellen (tables_best_K220) als zip oder mehrere zips gedownloadet wird müssen sie entpackt in einem Ordner "tabels_best_k220" in A-Star_and_ALT abgelegt werden
 
 ## Projektstruktur
 ```
