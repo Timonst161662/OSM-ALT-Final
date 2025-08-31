@@ -14,9 +14,8 @@ Antwortet auf `GET /route?source=<id>&target=<id>`.
 - Abhängigkeiten (liegen im Projekt):
   - [Crow](https://github.com/CrowCpp/Crow) (header-only)
   - [nlohmann/json](https://github.com/nlohmann/json) (header-only)
-Download Graph: https://drive.google.com/file/d/16rm5ReNZ1FQIxD3omjH4qh_nvb653DqY/view?usp=sharing
-Download Landmark Tables: https://drive.google.com/drive/folders/1ZsEQX4emFX66ZMs1exxaRw1v3P-RPIkc?usp=sharing
-Wenn die Landmark Tabellen (tables_best_K220) als zip oder mehrere zips gedownloadet wird müssen sie entpackt in einem Ordner "tabels_best_k220" in A-Star_and_ALT abgelegt werden
+- Wenn die Landmark Tabellen (tables_best_K220) als zip oder mehrere zips gedownloadet wird müssen sie entpackt in einem Ordner "tabels_best_k220" in A-Star_and_ALT abgelegt werden
+- Graph und Landmark Tabellen sind zu groß für github.
 
 ## Projektstruktur
 ```
@@ -35,13 +34,32 @@ A-Star_and_ALT/
 └─ static/              # Frontend-Dateien (index.html, js, css)
 ```
 
-## Build (Visual Studio)
-1. Öffne `A_Star_and_ALT.vcxproj`.
-2. Konfiguration: **Release** / **x64**.
-3. Zusätzliche Include-Verzeichnisse setzen:
-4. - Für den HTTP-Server (Crow) muss die Winsock-Bibliothek eingebunden werden.
-- In Visual Studio: Linker → Eingabe → Zusätzliche Abhängigkeiten → `Ws2_32.lib`.
-5. Build starten (`F7`) oder einfach ausführen (F5)
+##Windows
+1. alles downloaden und entpacken wenn nötig
+2. bash: cl /std:c++17 /EHsc /O2 ^
+  /I"externe includes\crow_x64-windows\include" ^
+  /I"externe includes\nlohmann-json_x64-windows\include" ^
+  /I"externe includes\asio_x64-windows\include" ^
+  routing.cpp ALT.cpp AStar.cpp Dijkstra.cpp GraphUtils.cpp Geo.cpp ^
+  Ws2_32.lib
+(3. für MinGW g++ -std=c++17 -O2 ^
+  -I"externe includes\crow_x64-windows\include" ^
+  -I"externe includes\nlohmann-json_x64-windows\include" ^
+  -I"externe includes\asio_x64-windows\include" ^
+  routing.cpp ALT.cpp AStar.cpp Dijkstra.cpp GraphUtils.cpp Geo.cpp ^
+  -lws2_32 -o router.exe) --> start über router.exe
+
+
+#Mac
+1. alles downloaden und entpacken wenn nötig
+2. bash:clang++ -std=c++17 -O2 \
+  -I"externe_includes/crow_x64-windows/include" \
+  -I"externe_includes/nlohmann-json_x64-windows/include" \
+  -I"externe_includes/asio_x64-windows/include" \
+  routing.cpp ALT.cpp AStar.cpp Dijkstra.cpp GraphUtils.cpp Geo.cpp \
+  -o router
+3. starte: ./router
+
 
 ## Start
 1. Stelle sicher, dass `graph_output_fixed.fmi` und `tables_best_K220/` im Projektordner liegen.  
