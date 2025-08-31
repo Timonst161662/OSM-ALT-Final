@@ -122,9 +122,13 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>$(ProjectDir)externe includes\crow_x64-windows\include
-$(ProjectDir)externe includes\nlohmann-json_x64-windows\include
+      <AdditionalIncludeDirectories>
+  $(ProjectDir)externe includes\crow_x64-windows\include;
+  $(ProjectDir)externe includes\nlohmann-json_x64-windows\include;
+  $(ProjectDir)externe includes\asio_x64-windows\include;
+  %(AdditionalIncludeDirectories)
 </AdditionalIncludeDirectories>
+
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
