@@ -123,9 +123,9 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <AdditionalIncludeDirectories>
-  $(ProjectDir)externe includes\crow_x64-windows\include;
-  $(ProjectDir)externe includes\nlohmann-json_x64-windows\include;
-  $(ProjectDir)externe includes\asio_x64-windows\include;
+  $(ProjectDir)externe_includes\crow_x64-windows\include;
+  $(ProjectDir)externe_includes\nlohmann-json_x64-windows\include;
+  $(ProjectDir)externe_includes\asio_x64-windows\include;
   %(AdditionalIncludeDirectories)
 </AdditionalIncludeDirectories>
 
