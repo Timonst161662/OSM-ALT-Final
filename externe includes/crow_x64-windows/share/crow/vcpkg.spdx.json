@@ -1,0 +1,115 @@
+{
+  "$schema": "https://raw.githubusercontent.com/spdx/spdx-spec/v2.2.1/schemas/spdx-schema.json",
+  "spdxVersion": "SPDX-2.2",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "documentNamespace": "https://spdx.org/spdxdocs/crow-x64-windows-1.2.1.2-0f1118c5-d353-4b0e-9121-6afbb75fa0e1",
+  "name": "crow:x64-windows@1.2.1.2 c195b24d7cb7495f3f7311af8676c6a037d1b043d1002b72353451382219b49a",
+  "creationInfo": {
+    "creators": [
+      "Tool: vcpkg-2025-05-19-ece4c0f6b8fae9e94513d544c7aa753dd2c82337"
+    ],
+    "created": "2025-06-27T08:07:49Z"
+  },
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "GENERATES",
+      "relatedSpdxElement": "SPDXRef-binary"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-1"
+    },
+    {
+      "spdxElementId": "SPDXRef-binary",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-0",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-1",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-1",
+      "relationshipType": "DEPENDENCY_MANIFEST_OF",
+      "relatedSpdxElement": "SPDXRef-port"
+    }
+  ],
+  "packages": [
+    {
+      "name": "crow",
+      "SPDXID": "SPDXRef-port",
+      "versionInfo": "1.2.1.2",
+      "downloadLocation": "git+https://github.com/Microsoft/vcpkg#ports/crow",
+      "homepage": "https://github.com/CrowCpp/crow",
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "description": "Very fast and easy to use C++ micro web framework",
+      "comment": "This is the port (recipe) consumed by vcpkg."
+    },
+    {
+      "name": "crow:x64-windows",
+      "SPDXID": "SPDXRef-binary",
+      "versionInfo": "c195b24d7cb7495f3f7311af8676c6a037d1b043d1002b72353451382219b49a",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "This is a binary package built by vcpkg."
+    },
+    {
+      "SPDXID": "SPDXRef-resource-0",
+      "name": "CrowCpp/crow",
+      "downloadLocation": "git+https://github.com/CrowCpp/crow@v1.2.1.2",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "a35344e2b877c8f0ad0afa68a8218bc1ffc7abd9248aa4ef1753562e35f465e31c78d798238f5017c28025c597e51d9cc7019d6bcc31c4a4c27b73dd127fd36b"
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "fileName": "./portfile.cmake",
+      "SPDXID": "SPDXRef-file-0",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e27d3d50df688e4a0be30b3d4b11ad329668aebbc1daccf6621d40bddfaa12ad"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./vcpkg.json",
+      "SPDXID": "SPDXRef-file-1",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "2448cea6c37da51e4a0d36827c4ddd7a2010448560dc78ffd66d73918c20bed0"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    }
+  ]
+}

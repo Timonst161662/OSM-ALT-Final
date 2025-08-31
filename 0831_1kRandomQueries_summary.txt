@@ -1,0 +1,50 @@
+Routing Summary
+================
+
+Queries (verarbeitet): 1000
+Quantile (Meter): q20=5702358.388  q40=8559931.944  q60=10943994.118  q80=13703149.235
+
+Overall Averages (ms) — nur erfolgreiche Läufe je Algo:
+  Dijkstra : 1103.036  (n=996)
+  A*       : 475.369  (n=996)
+  ALT uni  : 100.676  (n=996)
+  ALT bi   : 88.134  (n=995)
+  ALT OR   : 86.511  (n=995)
+
+Per-Quantile-Bucket Averages (ms):
+  [XS]  Queries: 200
+    Dijkstra : 263.445  (n=200)
+    A*       : 71.710  (n=200)
+    ALT uni  : 40.510  (n=200)
+    ALT bi   : 27.151  (n=199)
+    ALT OR   : 26.000  (n=199)
+
+  [S]  Queries: 200
+    Dijkstra : 730.540  (n=200)
+    A*       : 208.290  (n=200)
+    ALT uni  : 66.820  (n=200)
+    ALT bi   : 45.515  (n=200)
+    ALT OR   : 43.670  (n=200)
+
+  [M]  Queries: 199
+    Dijkstra : 1142.396  (n=197)
+    A*       : 411.355  (n=197)
+    ALT uni  : 91.117  (n=197)
+    ALT bi   : 72.716  (n=197)
+    ALT OR   : 70.812  (n=197)
+
+  [L]  Queries: 200
+    Dijkstra : 1503.066  (n=198)
+    A*       : 609.914  (n=198)
+    ALT uni  : 99.859  (n=198)
+    ALT bi   : 89.646  (n=198)
+    ALT OR   : 87.434  (n=198)
+
+  [XL]  Queries: 201
+    Dijkstra : 1876.458  (n=201)
+    A*       : 1072.975  (n=201)
+    ALT uni  : 204.403  (n=201)
+    ALT bi   : 204.537  (n=201)
+    ALT OR   : 203.522  (n=201)
+
+Aktueller OR_SWITCH_METERS: 674087.637 m

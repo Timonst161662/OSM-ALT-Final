@@ -1,0 +1,17 @@
+<head>
+    <title>Routing Map</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+</head>
+<body>
+    <div class="controls">
+        <label>Source Node: <input type="number" id="sourceNode" /></label>
+        <label>Target Node: <input type="number" id="targetNode" /></label>
+        <button onclick="calculateRoute()">Find Route</button>
+    </div>
+    <div id="map"></div>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

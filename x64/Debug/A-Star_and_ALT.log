@@ -1,0 +1,11 @@
+﻿  LandmarkFinder.cpp
+C:\LocalExpansionGraphAlgorithm\A-Star_and_ALT\A-Star_and_ALT\LandmarkFinder.cpp(54,20): warning C4244: "Initialisierung": Konvertierung von "double" in "int", möglicher Datenverlust
+C:\LocalExpansionGraphAlgorithm\A-Star_and_ALT\A-Star_and_ALT\LandmarkFinder.cpp(55,20): warning C4244: "Initialisierung": Konvertierung von "double" in "int", möglicher Datenverlust
+C:\LocalExpansionGraphAlgorithm\A-Star_and_ALT\A-Star_and_ALT\LandmarkFinder.cpp(69,24): warning C4244: "Initialisierung": Konvertierung von "double" in "int", möglicher Datenverlust
+C:\LocalExpansionGraphAlgorithm\A-Star_and_ALT\A-Star_and_ALT\LandmarkFinder.cpp(70,24): warning C4244: "Initialisierung": Konvertierung von "double" in "int", möglicher Datenverlust
+  main.cpp
+  Code wird generiert...
+  LINK : C:\LocalExpansionGraphAlgorithm\A-Star_and_ALT\x64\Debug\A-Star_and_ALT.exe wurde nicht gefunden oder beim letzten inkrementellen Linkvorgang nicht erstellt; vollständiger Link wird durchgeführt.
+  A-Star_and_ALT.vcxproj -> C:\LocalExpansionGraphAlgorithm\A-Star_and_ALT\x64\Debug\A-Star_and_ALT.exe
+  Der Befehl "pwsh.exe" ist entweder falsch geschrieben oder
+  konnte nicht gefunden werden.
